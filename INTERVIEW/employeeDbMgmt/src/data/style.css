@@ -1,0 +1,86 @@
+:root {
+    --btn: rgb(226, 221, 221);
+    --btn-hover: rgb(250, 244, 244);    
+}
+
+body {
+    margin: 6px 30px;
+    background-color: rgb(182, 177, 177)
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__container {
+    display: flex;
+    font-size: 20px;
+    height: 75vh;
+}
+
+img {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.employees__names--list > ul >li {
+    background-color: var(--btn);
+    padding: 8px;
+    margin-top: 6px;
+    margin-left: -7%;
+    list-style: none;
+    /* overflow-y: scroll; */
+}
+
+.employees__names--list > ul  {
+    height: 60vh;
+    width: 35%;
+    position: absolute;
+    overflow-y: scroll;
+}
+
+/* 
+ul>li {
+    list-style: none;
+    background-color: var(--btn);
+    margin-top: 5px;
+    margin-left: -25px;
+    padding: 10px;
+} */
+
+.employees__names {
+    width: 40%;
+    border: 1px solid black;
+    padding: 4px 10px;
+}
+
+.employees__single {
+    width: 60%;
+    border: 1px solid black;
+    padding: 4px 10px;
+}
+
+p {
+    text-align: center;
+}
+
+.employees__single--info > p{
+    padding: 0;
+    margin: 10px;
+}
+
+button {
+    background-color: var(--btn);
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+}
+
+button:hover {
+    background-color: var(--btn-hover);
+}
