@@ -6,5 +6,19 @@ const inventory = [
   { name: "fish", type: "meat", quantity: 22 },
 ];
 
-const result = Object.groupBy(inventory, ({ type }) => type);
-console.log(result);
+// const result = Object.groupBy(inventory, ({ type }) => type);
+// console.log(result);
+
+function groupByType(inventory) {
+  return inventory.reduce((acc, curr) => {
+    const type = curr.type;
+    if (!acc[type]) {
+      acc[type] = [];
+    }
+    acc[type].push(curr);
+
+    return acc;
+  }, {});
+}
+
+console.log(groupByType(inventory));
