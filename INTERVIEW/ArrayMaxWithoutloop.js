@@ -17,4 +17,4 @@ function thirdMax(arr) {
   return Math.max(...arr);
 }
 
-console.log(thirdMax(numbersArray));
+console.log("thirdMax ", thirdMax(numbersArray));

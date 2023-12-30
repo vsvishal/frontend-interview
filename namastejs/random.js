@@ -43,10 +43,21 @@
 // // const balance = new Number(100);
 // // console.log(balance);
 
-// const min = 10;
-// const max = 20;
+const min = 10;
+const max = 20;
 
-// // console.log(Math.floor(Math.random() * (max - min + 1)) + min);
+console.log(Math.floor(Math.random() * (max - min + 1)) + min);
+
+console.log("----------------------------------------------------------");
+
+const allUsers = ["Vishal", "Bhau", "Elon", "Billgates"];
+function shuffle(arr) {
+  const random = Math.floor(Math.random() * arr.length);
+  console.log("random ", random);
+  console.log(arr[random]);
+}
+
+shuffle(allUsers);
 
 // const myDate = new Date();
 // // console.log(myDate.toString());

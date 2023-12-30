@@ -7,6 +7,8 @@ const obj = {
   e: 4,
 };
 
+// get values from object with dynamic keys
+
 function getAllValues(obj, value = []) {
   for (const key in obj) {
     if (typeof obj[key] === "object") {
@@ -44,6 +46,7 @@ const user = {
   e: 4,
 };
 
+// write a function to return all names from objects
 function traverseObj(obj, values = []) {
   for (const key in obj) {
     if (typeof obj[key] === "object") {
