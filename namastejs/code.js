@@ -17,7 +17,7 @@
 
 // console.log(0015);
 
-const arr = [1, 2, 3, 4];
+// const arr = [1, 2, 3, 4];
 
 // console.log(arr[arr.length - 1]);
 
@@ -25,16 +25,30 @@ const arr = [1, 2, 3, 4];
 //   console.log("hey ", n);
 // }
 
-const object1 = {
-  a: "somestring",
-  b: 42,
-  c: false,
-};
+// const object1 = {
+//   a: "somestring",
+//   b: 42,
+//   c: false,
+// };
 
-const obj2 = {
-  a: "bhau",
-  b: 26,
-};
+// const obj2 = {
+//   a: "bhau",
+//   b: 26,
+// };
 
-console.log({ ...object1, ...obj2 });
-console.log(Object.values(object1));
+// console.log({ ...object1, ...obj2 });
+// console.log(Object.values(object1));
+
+function customFlatMap(arr, dept, res = [], curr = 0) {
+  for (let i = 0; i < arr.length; i++) {
+    if (Array.isArray(arr[i]) && curr < dept) {
+      customFlatMap(arr[i], dept, res, curr + 1);
+    } else {
+      res.push(arr[i]);
+    }
+  }
+  return res;
+}
+
+const arr = [[1, 2, [3, 3], 4], 6, 7, [8, 9]];
+console.log(customFlatMap(arr, 2));
