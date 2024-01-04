@@ -1,4 +1,4 @@
-let str = "{[([]])]}";
+let str = "{[([])]}";
 
 function matchingBrackets(str) {
   const stack = [];

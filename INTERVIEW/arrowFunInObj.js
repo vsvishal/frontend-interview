@@ -16,7 +16,7 @@ disp.call(user);
 // const newFun = user.display.bind(user);
 // newFun();
 
-// disp();
-// user.show();
+disp();
+user.show();
 
 // console.log(undefined * undefined);

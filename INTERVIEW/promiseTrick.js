@@ -22,7 +22,12 @@ async function handlePromise() {
   console.log(va2);
 }
 
-// handlePromise();
+setTimeout(() => {
+  Promise.resolve("setTimeout LINE 26 promise resolved!!");
+  console.log("SETTIMEOUT");
+}, 2000);
+
+handlePromise();
 
 function getData() {
   p1.then((res) => console.log(res, " 1 🐶"));
