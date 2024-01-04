@@ -3,7 +3,7 @@ const urlLink: string = "https://fakestoreapi.com/products";
 interface User {
   title: string;
   price: number;
-  description: string; // Fix: Change the type to string
+  description: string;
 }
 
 const getApiData = async (): Promise<User[]> => {

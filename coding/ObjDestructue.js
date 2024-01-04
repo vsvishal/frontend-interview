@@ -10,10 +10,10 @@ const obj = {
 };
 
 const {
-  b: newName,
   b: {
-    c: { f },
+    d: { f: newFnam },
   },
 } = obj;
 
-console.log(b);
+// console.log(f);
+console.log(newFnam);
