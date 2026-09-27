@@ -22,3 +22,12 @@ function groupByType(inventory) {
 }
 
 console.log(groupByType(inventory));
+
+const result = inventory.reduce((map, curr) => {
+  const type = curr.type;
+  if (!map.has(type)) {
+    map.set(type, []);
+  }
+  map.get(type).push(curr);
+  return map;
+}, new Map());

@@ -6,12 +6,16 @@ function add(a) {
   };
 }
 
-function infiniteCurrying(a) {
+function sum(a) {
   return function (b) {
-    console.log("b ", b);
-    if (b) return infiniteCurrying(a + b);
-    return a;
+    if (b === undefined) {
+      return a;
+    }
+
+    return sum(a + b);
   };
 }
 
-console.log(infiniteCurrying(5)(2)(2)(2)());
+const result = sum(10)(20)(30)(40)();
+
+console.log(result); // 100
