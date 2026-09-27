@@ -17,3 +17,6 @@ user.display();
 // However, the setTimeout callback is a separate regular function. Regular function don't lexically inherit this.
 
 //Arrow funcion this comes from where the function was created.
+
+// Regular function -> this depends on how the function is called
+// Arrow function -> this comes from where the function was created.
